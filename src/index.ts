@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   if (cookies.get('access_token')) {
     return res.redirect('/followings');
   }
-  return res.redirect('/t_callback');
+  return res.redirect('/login');
 });
 
 app.listen(2501, () => {

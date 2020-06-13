@@ -41,7 +41,7 @@ route.get('/', (req, res) => {
     while (friend_count && cursor !== '0' && cursor !== '-1') {
       const options: any = { 
         count: 200, 
-        screen_name: 'AstroAlteraane', 
+        screen_name: 'wydrops', 
         skip_status: false, 
         tweet_mode: 'extended', 
         include_user_entities: true,
