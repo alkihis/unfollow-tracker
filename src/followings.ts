@@ -89,7 +89,7 @@ route.get('/', (req, res) => {
     `);
   })().catch(e => {
     console.error(e);
-    res.send(400).send('Unable to get keys. Please check request and tokens. if the problem persists, <a href="/login">login again</a>.');
+    res.status(400).send('Unable to get keys. Please check request and tokens. if the problem persists, <a href="/login">login again</a>.');
   });
 });
 

@@ -25,7 +25,7 @@ route.get('/', (req, res) => {
       <a href="https://api.twitter.com/oauth/authenticate?oauth_token=${oauth_token}">Click here to login</a>
     `);
   })().catch(e => {
-    res.send(400).send('Unable to get keys. Please check request and tokens.');
+    res.status(400).send('Unable to get keys. Please check request and tokens.');
     console.error(e);
   });
 });

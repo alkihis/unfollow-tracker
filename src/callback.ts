@@ -48,7 +48,7 @@ route.get('/', (req, res) => {
       </html>
     `);
   })().catch(e => {
-    res.send(400).send('Unable to get keys. Please check request and tokens.');
+    res.status(400).send('Unable to get keys. Please check request and tokens.');
     console.error(e);
   });
 });
